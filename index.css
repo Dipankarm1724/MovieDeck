@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+/* Globar Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+header>a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 50px;
+}
+
+#search-input {
+    width: 500px;
+    height: 60px;
+    padding: 0 7px;
+    margin-right: 10px;
+    border: 1px solod black;
+    border-radius: 5px;
+    font-size: 30px;
+
+}
+
+#search-btn {
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #333;
+    color: white;
+    padding: 0 7px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* Sorting Options */
+#sorting-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#sort-by-date,
+#sort-by-rating {
+    width: 300px;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tabs */
+
+#tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+#all-tab,
+#favourites-tab {
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-tab {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+#movie-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.card {
+    width: 300px;
+    height: 550px;
+    margin: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.poster {
+    width: 300px;
+    height: 405px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vote-favouriteIcon {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.vote-count,
+.vote-rating {
+    font-size: 20px;
+}
+
+.favourite-icon {
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.pagination button {
+    margin-right: 10px;
+}
+
+#prev-button,
+#page-number-button,
+#next-button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 7px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+footer>a {
+    color: white;
+    text-decoration: none;
+}

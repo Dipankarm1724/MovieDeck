@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="search" name="search" id="search-input" placeholder="Search by name..." autocomplete="off">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Sort Tab -->
+    <div id="sorting-options">
+        <button id="sort-by-date"> Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by Rating (latest to most)</button>
+    </div>
+
+    <!-- Listing Tabs -->
+    <div id="tabs">
+        <button id="all-tab" class="active-tab">All</button>
+        <button id="favourites-tab">Favourites</button>
+    </div>
+
+
+    <!-- Liting Movie -->
+    <div id="movie-list-pagination-btns">
+        <ul id="movie-list">
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Liting Movie -->
+    <!-- <div id="movie-list-pagination-btns">
+        <ul id="movie-list">
+            <li class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BZmYzMzU4NjctNDI0Mi00MGExLWI3ZDQtYzQzYThmYzc2ZmNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"
+                    alt="Godzilla vs. Kong.jpg" class="poster">
+                <p class="title">Godzilla vs. Kong</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count"> Vote : 1996</p>
+                        <p class="vote-rating">Rating : 4.9</p>
+                    </section>
+                    <section>
+                        <i class="fa-regular fa-heart fa-2x favourite-icon"></i>
+                    </section>
+                </section>
+            </li>
+        </ul>
+    </div> -->
+
+    <div class="pagination">
+        <button id="prev-button">
+            << Previous</button>
+                <button id="page-number-button">Current page: 1</button>
+                <button id="next-button">Next >></button>
+
+    </div>
+
+    <footer>
+        <a href="/">
+            <p> &copy; 2023 Movie Deck</p>
+        </a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c3ebb90304.js" crossorigin="anonymous"></script>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
